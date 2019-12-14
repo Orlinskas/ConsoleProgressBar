@@ -3,6 +3,8 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 //apply plugin: 'com.novoda.bintray-release'
 apply plugin: 'com.github.dcendents.android-maven'
+group = 'com.github.orlinskas'
+version = '1.0'
 
 android {
     compileSdkVersion 29
@@ -38,16 +40,16 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
 
-publish {
-    userOrg = 'orlinskasdevelopment'
-    groupId = 'com.github.orlinskas'
-    artifactId = 'consoleprogressbar'
-    publishVersion = '0.0.1'
-    desc = 'Progress bar like in old console'
-    licences = ['Apache-2.0']
-    uploadName = 'ConsoleProgressBar'
-    website = 'https://github.com/Orlinskas/ConsoleProgressBar'
-}
+//publish {
+//    userOrg = 'orlinskasdevelopment'
+//    groupId = 'com.github.orlinskas'
+//    artifactId = 'consoleprogressbar'
+//    publishVersion = '0.0.1'
+//    desc = 'Progress bar like in old console'
+//    licences = ['Apache-2.0']
+//    uploadName = 'ConsoleProgressBar'
+//    website = 'https://github.com/Orlinskas/ConsoleProgressBar'
+//}
 
 //gradlew clean build bintrayUpload -PbintrayUser=orlinskas -PbintrayKey=0fb09f1dd5618115016c74979700f7ca81e937e3 -PdryRu=
 //false
