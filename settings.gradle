@@ -1,0 +1,2 @@
+include ':app', ':consoleprogressbar'
+rootProject.name='My App'
