@@ -20,4 +20,4 @@ dependencies {
 	        implementation 'com.github.Orlinskas:ConsoleProgressBar:Tag'
 	}
 ```  
-## Version stable Tag: 1.0   
+## Version stable Tag: 1.1  
