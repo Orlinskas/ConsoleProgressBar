@@ -8,7 +8,6 @@ import android.view.View
 import android.animation.ValueAnimator
 import android.view.animation.LinearInterpolator
 
-
 class ConsoleProgressBar @JvmOverloads
 constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0) : View(context, attrs, defStyleAttr) {
     private var animator: ValueAnimator? = null
@@ -29,6 +28,19 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
         paint = Paint(Paint.ANTI_ALIAS_FLAG)
         paint.style = Paint.Style.STROKE
         path = Path()
+
+        val ta = context.obtainStyledAttributes(attrs, R.styleable.ConsoleProgressBar)
+        try {
+            val color = ta.getColor(R.styleable.ConsoleProgressBar_color, color)
+            val strokeWidth = ta.getDimension(R.styleable.ConsoleProgressBar_strokeWidth, strokeWidth)
+            val intermediate = ta.getBoolean(R.styleable.ConsoleProgressBar_intermediate, intermediate)
+
+            this.color = color
+            this.strokeWidth = strokeWidth
+            this.intermediate = intermediate
+        } finally {
+            ta.recycle()
+        }
     }
 
     override fun onAttachedToWindow() {
@@ -85,8 +97,8 @@ constructor(context: Context, attrs: AttributeSet? = null, defStyleAttr: Int = 0
             pointD = Point((width / 10) * 8, (height / 10) * 7)
             pointD1 = Point((width / 10) * 6, (height / 10) * 8)
 
-            pointF1 = Point((width / 10) * 5, (height / 10) * 3)
-            pointF2 = Point((width / 10) * 5, (height / 10) * 7)
+            pointF1 = Point((width / 10) * 5, (height / 20) * 7)
+            pointF2 = Point((width / 10) * 5, (height / 20) * 13)
 
             // левая скобка
             path.reset()

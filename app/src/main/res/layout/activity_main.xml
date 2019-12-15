@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main_cl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.orlinskas.consoleprogressbar.ConsoleProgressBar
+        android:id="@+id/activity_main_console_progress_bar5"
+        android:layout_width="112dp"
+        android:layout_height="101dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="115dp"
+        app:color="@android:color/holo_purple"
+        app:intermediate="true"
+        app:strokeWidth="10sp" />
+
+    <com.orlinskas.consoleprogressbar.ConsoleProgressBar
+        android:id="@+id/activity_main_console_progress_bar8"
+        android:layout_width="86dp"
+        android:layout_height="164dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="247dp"
+        app:color="@android:color/holo_blue_bright"
+        app:intermediate="true"
+        app:strokeWidth="7sp" />
+
+    <com.orlinskas.consoleprogressbar.ConsoleProgressBar
+        android:id="@+id/activity_main_console_progress_bar6"
+        android:layout_width="112dp"
+        android:layout_height="101dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="512dp"
+        app:color="@color/colorPrimaryDark"
+        app:intermediate="true"
+        app:strokeWidth="10sp" />
+
+    <com.orlinskas.consoleprogressbar.ConsoleProgressBar
+        android:id="@+id/activity_main_console_progress_bar7"
+        android:layout_width="112dp"
+        android:layout_height="101dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="463dp"
+        app:color="@android:color/holo_orange_light"
+        app:intermediate="true"
+        app:strokeWidth="8sp" />
+
+    <com.orlinskas.consoleprogressbar.ConsoleProgressBar
+        android:id="@+id/activity_main_console_progress_bar4"
+        android:layout_width="170dp"
+        android:layout_height="152dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-3dp"
+        android:layout_marginBottom="0dp"
+        app:color="@android:color/black"
+        app:intermediate="true"
+        app:strokeWidth="10sp" />
+
+    <com.orlinskas.consoleprogressbar.ConsoleProgressBar
+        android:id="@+id/activity_main_console_progress_bar3"
+        android:layout_width="72dp"
+        android:layout_height="63dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        app:color="@android:color/holo_orange_dark"
+        app:intermediate="true"
+        app:strokeWidth="5sp" />
+
+    <com.orlinskas.consoleprogressbar.ConsoleProgressBar
+        android:id="@+id/activity_main_console_progress_bar"
+        android:layout_width="190dp"
+        android:layout_height="187dp"
+        android:layout_centerInParent="true"
+        app:color="@color/colorAccent"
+        app:intermediate="true"
+        app:strokeWidth="20sp" />
+
+    <com.orlinskas.consoleprogressbar.ConsoleProgressBar
+        android:id="@+id/activity_main_console_progress_bar2"
+        android:layout_width="99dp"
+        android:layout_height="122dp"
+        app:color="@color/design_default_color_primary_dark"
+        app:intermediate="true"
+        app:strokeWidth="10sp" />
+
+
+</RelativeLayout>
