@@ -1,10 +1,8 @@
 package com.orlinskas.myapp
 
 import android.os.Bundle
-import com.google.android.material.snackbar.Snackbar
 import androidx.appcompat.app.AppCompatActivity
-
-import kotlinx.android.synthetic.main.activity_main.*
+import com.orlinskas.consoleprogressbar.ConsoleProgressBar
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,6 +10,17 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-    }
+        val progressBar = findViewById<ConsoleProgressBar>(R.id.activity_main_console_progress_bar)
 
+        //settings
+        progressBar.setColor(resources.getColor(R.color.colorAccent))
+        progressBar.setStrokeWidth(15f)
+
+        // active management
+        progressBar.start()
+        progressBar.stop()
+
+        //or
+        progressBar.intermediate(true)
+    }
 }
